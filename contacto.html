@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logoSF.png" alt="Logo de DigiTeca" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobrenos.html">Sobre Nosotros</a></li>
+          <li><a href="biblioteca.html">Biblioteca Digital</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+        
+    <div id="tamañoTexto">
+      <button id="aumentar">A▲</button>
+      <button id="disminuir">a▼</button>
+    </div>
+
+    <main class="contacto">
+      <section class="contenido">
+        <h2>Contacto</h2>
+        <div class="contenedor">
+          <section class="izquierda">
+            <div class="frase2">
+              <h3>¡Nos encantaría saber de vos!</h3>
+              <p>
+                Por favor, completa el formulario a continuación para ponerte en
+                contacto con nosotros.
+              </p>
+            </div>
+            <div class="info">
+              <h3>Información de Contacto</h3>
+              <p>📞: 123-456-789</p>
+              <p>📌: Calle Ficticia 123, Ciudad Ficticia, CP 12345</p>
+              <p>📧: contacto@digiteca.com</p>
+            </div>
+          </section>
+
+          <section class="formulario">
+            <form id="formulario-contacto" action="#" method="post" novalidate>
+              <div>
+                <label for="nombre">Nombre:<span> *</span></label>
+                <input type="text" id="nombre" name="nombre" maxlength="30" placeholder="Escribí tu nombre..." required/>
+              </div>
+              <div>
+                <label for="email">Email:<span> *</span></label>
+                <input type="email" id="email" name="email" placeholder="Escribí tu email..." required />
+              </div>
+              <div>
+                <label for="mensaje">Mensaje:<span> *</span></label>
+                <textarea id="mensaje" name="mensaje" rows="4" maxlength="200" placeholder="Escribí tu mensaje..." required></textarea>
+              </div>
+              <button type="submit">Enviar Mensaje</button>
+              <br><br>
+               <p>(*) Campos obligatorios</p>
+            </form>
+          </section>
+        </div>
+      </section>
+
+      <section class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14172.54829806873!2d-55.8953947!3d-27.3714342!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be4a0aa5fc7d%3A0xcd599c063e5f51a4!2sUniversidad%20Gast%C3%B3n%20Dachary%20%2F%2F%20Sede%20Central!5e0!3m2!1ses-419!2sar!4v1715450912299!5m2!1ses-419!2sar"
+          width="1200"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <div class="pie">
+        <img src="img/logoSFb.png" alt="Logo de DigiTeca" />
+        <div class="politicas">
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Política de Cookies</a>
+        </div>
+        <p>
+          Agradecemos tu visita a nuestra Biblioteca Virtual. ¡Disfruta de la
+          lectura!
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

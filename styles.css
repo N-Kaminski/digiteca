@@ -1,0 +1,573 @@
+
+/*
+#374F59
+#9DB3C1
+#E0E6E9
+con letras en color:
+#3C3C3B
+*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3C3C3B; 
+}
+
+/* Estilos para el NAV */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #E0E6E9; 
+}
+
+.logo img {
+    width: 300px; 
+    margin-left: 30px;
+}
+
+nav {
+    display: flex; 
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-right: 30px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px; /*entre menu*/
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3C3C3B;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    color: #9DB3C1;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr; 
+        padding: 20px;
+        justify-items: center;
+    }
+
+    nav{
+        text-align: center;
+        text-wrap: balance;
+    }
+}
+
+/* Estilo para el body */
+
+main {
+    padding: 20px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* Estilos para el FOOTER */
+
+footer {
+    background-color: #374F59; 
+    color: #E0E6E9; 
+    padding: 20px;
+}
+
+footer img {
+    width: 200px;
+}
+
+.politicas {
+    display: flex;
+    justify-content: center;
+}
+
+.politicas a {
+    align-items: center;
+    color: #9DB3C1;
+    margin: 0 10px;
+}
+
+.pie {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 30px;
+}
+
+.pie p{
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .pie {
+        grid-template-columns: 1fr; 
+        text-align: center;
+        padding: 20px;
+        justify-items: center;
+    }
+
+    .pie img {
+        margin-bottom: 20px;
+    }
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* Estilos para HOME */
+
+.home {
+    color: #3C3C3B; 
+}
+
+.home .descripcion {
+    position: relative;
+    text-align: center; 
+    align-items: center;
+    padding: 150px 20px;
+    background-image: url(img/biblio.jpg); 
+    background-size: cover; /* Ajusta la imagen */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    box-sizing: border-box;
+}
+
+.home .descripcion::before {
+    content: "";
+    position: absolute;
+    top: 50%; 
+    left: 0;
+    width: 100%;
+    height: 150px; 
+    background-color: rgba(212, 204, 204, 0.562); 
+    transform: translateY(-50%); 
+    z-index: 1;
+    padding: 20px 0;
+}
+
+.home .descripcion h1 {
+    position: relative;
+    z-index: 2;
+    color: #3C3C3B;
+    font-size: 36px; 
+    margin-bottom: 5px;
+}
+
+.home .descripcion p {
+    position: relative;
+    z-index: 2; 
+    color: #3C3C3B; 
+    font-size: 20px;
+}
+
+.home h2 {
+    text-align: center; 
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.home .galeriaLibros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home .galeriaLibros img {
+    width: 200px; 
+    height: 300px;
+    border-radius: 10px; 
+    margin: 20px;
+}
+
+.home .galeriaLibros img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(109, 129, 168, 0.2);
+}
+
+.home .galeriaLibros p {
+    margin-top: 10px; 
+    text-align: center; 
+    width: 200px;
+    margin: auto; 
+    color: #374F59;
+}
+
+.home .frase {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    align-items: center;
+    margin-top: 40px; 
+}
+
+.home .frase img{
+    width: 30px;
+    position: absolute;
+}
+
+.home .frase span{
+    display: flex;;
+}
+
+.home .frase p {
+    font-style: italic; 
+    text-align: center;
+    color: #3C3C3B; 
+    font-size: 17px;
+    margin-bottom: 15px; 
+}
+
+.home .frase span:first-child img {
+    top: 0; 
+    left: -10px; 
+}
+
+.home .frase span:last-child img {
+    bottom: 20px;
+    right: 0;
+    margin-bottom: 100px;
+    margin-right: -20px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* Estilos para NOSOTROS */
+
+.sobreNos .contenido {
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 100px;
+    margin-right: 20px;
+}
+
+.sobreNos .contenido img {
+    max-width: 40%;
+    border-radius: 10px;
+    margin-right: 20px;
+    float: left;
+}
+
+.sobreNos .contenido h2{
+    margin-bottom: 50px;
+}
+
+.sobreNos .contenido p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.sobreNos .contenido .btn-contacto {
+    color: #374F59;
+    font-weight: bold;
+}
+
+.sobreNos .contenido a:hover {
+    color: #9DB3C1;
+}
+
+.sobreNos .contenido .btn-contacto:hover {
+    text-decoration: underline;
+}
+
+.sobreNos .contenido p:last-child {
+    margin-bottom: 0;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* Estilos para CONTACTO */
+
+.contacto .contenido h2{
+    text-align: center; 
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.contacto .frase2 p {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.contacto .frase2 h3{
+    font-size: 18px;
+}
+
+.contacto .info {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.contacto .info h3 {
+    margin-bottom: 10px;
+}
+
+.contacto .contenido .formulario{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+        /* formulario */
+.contacto .formulario {
+    background-color: #E0E6E9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(109, 129, 168, 0.1);
+    box-sizing: border-box;
+    flex: 1 1 45%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column; 
+}
+
+.contacto .formulario label {
+    font-weight: bold;
+    color: #3C3C3B;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contacto .formulario input, textarea {
+    background-color: #ffffff;
+    border: 1px solid #9DB3C1;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: #3C3C3B;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contacto .formulario button {
+    background-color: #374F59;
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contacto .formulario button:hover {
+    background-color: #9DB3C1; 
+    color: #3C3C3B;
+}
+
+
+.contacto .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacto .izquierda {
+    flex: 1 1 50%;
+    padding: 20px;
+}
+
+        /* mapa */
+.contacto .mapa {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contacto .mapa iframe {
+    width: 100%;
+    max-width: 1000px; 
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(41, 59, 66, 0.322);
+}
+
+.contenedor{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* Estilos para BIBLIOTECA */
+
+.biblioteca .contenido h2{
+    text-align: center; 
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.biblioteca .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.biblioteca .galeriaLibros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style-type: none;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.biblioteca .galeriaLibros li {
+    background-color: #E0E6E9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(109, 129, 168, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(33.333% - 40px); /* para q los h4 no queden en 1 renglon */
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.biblioteca .galeriaLibros li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(109, 129, 168, 0.2);
+}
+
+.biblioteca .galeriaLibros .topBoton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+    z-index: 10;
+}
+
+.biblioteca .galeriaLibros .notaUsuario {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;    
+}
+
+.biblioteca .galeriaLibros .notaUsuario textarea{
+    margin: 0;
+}
+
+.biblioteca .galeriaLibros .notaUsuario button {
+    display: flex;
+    margin: 8px; 
+    align-items: center;
+    justify-content: center;
+    width: auto; 
+    height: auto;
+}
+
+.biblioteca .galeriaLibros a {
+    text-decoration: none;
+    color: #3C3C3B;
+    position: relative;
+    display: inline-block;
+}
+
+.biblioteca .galeriaLibros img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.biblioteca .galeriaLibros h4 {
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    color: #374F59;
+    flex-wrap: wrap;
+    word-wrap: break-word; /*no rompe las palabras*/
+}
+
+.biblioteca .galeriaLibros button{
+  background-color: #374F59;
+  border: none; 
+  border-radius: 5px;
+  padding: 8px; 
+  cursor: pointer; 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin-left: auto;
+  color: #E0E6E9;  
+  transition: background-color 0.3s ease; /* Transición para el efecto hover */
+}
+
+.biblioteca .galeriaLibros button:hover {
+    background-color: #9DB3C1; 
+    border-color: #374F59;
+    border-style: solid;
+    border-width: 1px;
+    color: #374F59;  
+  }
+
+  .biblioteca .galeriaLibros .marcador {
+    background: url(img/marcaNo.png) no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 40px;
+  }
+
+
+@media (max-width: 768px) {
+    .biblioteca .galeriaLibros li {
+        width: calc(50% - 20px);
+    }
+
+    .biblioteca .galeriaLibros h4 {
+        font-size: 16px; 
+    }
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* Estilo boton A+|A- */
+
+  #tamañoTexto {
+    position: fixed;
+    /* top: 150px; */
+    right: 20px; 
+    z-index: 999; 
+  }
+
+  #tamañoTexto button {
+    background-color: #374F59;
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  
+  #tamañoTexto button:hover {
+    background-color: #9DB3C1; 
+    color: #3C3C3B;
+  }
+
+

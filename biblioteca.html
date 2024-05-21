@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca Digital</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logoSF.png" alt="Logo de DigiTeca" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobrenos.html">Sobre Nosotros</a></li>
+          <li><a href="biblioteca.html">Biblioteca Digital</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+        
+    <div id="tamañoTexto">
+      <button id="aumentar">A▲</button>
+      <button id="disminuir">a▼</button>
+    </div>
+    
+
+    <main class="biblioteca">
+      <section class="contenido">
+        <h2>Biblioteca Digital</h2>
+
+        <ul class="galeriaLibros">
+          <li>
+            <div class="topBoton">
+              <button class="textoParaLeer" data-libro="libro1">🔊</button>
+              <button class="marcador" data-libro="libro1"></button>
+            </div>
+            <a
+              href="https://mdputneduar-my.sharepoint.com/:b:/g/personal/nkaminski_nodocente_mdp_utn_edu_ar/EUcLS6zNH6RBoQuahJBoaPIBplgLJy8eiIBpCMDfCurqGQ?e=CWZAzy" target="_blank">
+              <img
+                src="img/portadas/21LeccionesParaelSigloXXI.jpg"
+                alt="Portada del Libro 1"
+              />
+              <h4>21 Lecciones para el Siglo XXI</h4>
+            </a>
+            <div class="notaUsuario">
+              <textarea id="nota1" placeholder="Escribí tu nota..."></textarea>
+              <button id="salvarNota1">💾</button>
+              <button id="eliminarNota1">❌</button>
+            </div>
+          </li>
+
+          <li>
+            <div class="topBoton">
+              <button class="textoParaLeer" data-libro="libro2">🔊</button>
+              <button class="marcador" data-libro="libro2"></button>
+            </div>
+            <a
+              href="https://mdputneduar-my.sharepoint.com/:b:/g/personal/nkaminski_nodocente_mdp_utn_edu_ar/ESKlgXZzrFRCq3Wh62MNATEBRyfkf_2CQyvXvOMhpfdVvw?e=h852KG" target="_blank" >
+              <img
+                src="img/portadas/48LeyesDelPoder.jpg"
+                alt="Portada del Libro 2"
+              />
+              <h4>48 Leyes de Poder</h4>
+            </a>
+            <div class="notaUsuario">
+              <textarea id="nota2" placeholder="Escribí tu nota..."></textarea>
+              <button id="salvarNota2">💾</button>
+              <button id="eliminarNota2">❌</button>
+            </div>
+          </li>
+
+          <li>
+            <div class="topBoton">
+              <button class="textoParaLeer" data-libro="libro3">🔊</button>
+              <button class="marcador" data-libro="libro3"></button>
+            </div>
+            <a
+              href="https://mdputneduar-my.sharepoint.com/:b:/g/personal/nkaminski_nodocente_mdp_utn_edu_ar/EbAIGYdFcZJFpSfrK0TXPrwB7rsz59qAifJApy79GUsozw?e=df5D1U" target="_blank">
+              <img
+                src="img/portadas/elInversorInteligente.jpg"
+                alt="Portada del Libro 3"
+              />
+              <h4>El Inversor Inteligente</h4>
+            </a>        
+            <div class="notaUsuario">
+              <textarea id="nota3" placeholder="Escribí tu nota..."></textarea>
+              <button id="salvarNota3">💾</button>
+              <button id="eliminarNota3">❌</button>
+            </div>
+
+          </li>
+
+          <li>
+            <div class="topBoton">
+              <button class="textoParaLeer" data-libro="libro4">🔊</button>
+              <button class="marcador" data-libro="libro4"></button>
+            </div>
+            <a
+              href="https://mdputneduar-my.sharepoint.com/:b:/g/personal/nkaminski_nodocente_mdp_utn_edu_ar/EWQ30C_Zw2NHugltN1aOHJEBeBWZvBe34mQuSMKbksd-vg?e=QAeAT2" target="_blank">
+              <img
+                src="img/portadas/elMonjeQueVendioSuFerrari.jpg"
+                alt="Portada del Libro 4"
+              />
+              <h4>El Monje que Vendio su Ferrari</h4>
+            </a>
+            <div class="notaUsuario">
+              <textarea id="nota4" placeholder="Escribí tu nota..."></textarea>
+              <button id="salvarNota4">💾</button>
+              <button id="eliminarNota4">❌</button>
+            </div>
+          </li>
+
+          <li>
+            <div class="topBoton">
+              <button class="textoParaLeer" data-libro="libro5">🔊</button>
+              <button class="marcador" data-libro="libro5"></button>
+            </div>
+            <a
+              href="https://mdputneduar-my.sharepoint.com/:b:/g/personal/nkaminski_nodocente_mdp_utn_edu_ar/EQ_wnRDAigRNiIor7XzPoD4BoQL3RvO2cJCuM__ZotBd9g?e=YroaM9" target="_blank">
+              <img
+                src="img/portadas/elPoderDelDesorden.jpg"
+                alt="Portada del Libro 5"
+              />
+              <h4>El Poder del Desorden</h4>
+            </a>
+            <div class="notaUsuario">
+              <textarea id="nota5" placeholder="Escribí tu nota..."></textarea>
+              <button id="salvarNota5">💾</button>
+              <button id="eliminarNota5">❌</button>
+            </div>
+          </li>
+
+          <li>
+            <div class="topBoton">
+              <button class="textoParaLeer" data-libro="libro6">🔊</button>
+              <button class="marcador" data-libro="libro6"></button>
+            </div>
+            <a
+              href="https://mdputneduar-my.sharepoint.com/:b:/g/personal/nkaminski_nodocente_mdp_utn_edu_ar/EUSC1NgoCYZMqkmCkRN5qt0BPNvjS31YYn5D4pk-BMG5Nw?e=tjI9GE" target="_blank">
+              <img src="img/portadas/homoDeus.jpg" alt="Portada del Libro 6" />
+              <h4>Homo Deus</h4>
+            </a>
+            <div class="notaUsuario">
+              <textarea id="nota6" placeholder="Escribí tu nota..."></textarea>
+              <button id="salvarNota6">💾</button>
+              <button id="eliminarNota6">❌</button>
+            </div>
+          </li>
+
+          <li>
+            <div class="topBoton">
+              <button class="textoParaLeer" data-libro="libro7">🔊</button>
+              <button class="marcador" data-libro="libro7"></button>
+            </div>
+            <a
+              href="https://mdputneduar-my.sharepoint.com/:b:/g/personal/nkaminski_nodocente_mdp_utn_edu_ar/EfOdPD5i_ltBsGl_l1JjFlMBpGzT_jEfVr6znrpl3C5RzA?e=O7QZsQ" target="_blank">
+              <img
+                src="img/portadas/muchasVidasMuchosMaestros.jpg"
+                alt="Portada del Libro 7"
+              />
+              <h4>Muchas Vidas Muchos Maestros</h4>
+            </a>
+            <div class="notaUsuario">
+              <textarea id="nota7" placeholder="Escribí tu nota..."></textarea>
+              <button id="salvarNota7">💾</button>
+              <button id="eliminarNota7">❌</button>
+            </div>
+          </li>
+
+          <li>
+            <div class="topBoton">
+              <button class="textoParaLeer" data-libro="libro8">🔊</button>
+              <button class="marcador" data-libro="libro8"></button>
+            </div>
+            <a
+              href="https://mdputneduar-my.sharepoint.com/:b:/g/personal/nkaminski_nodocente_mdp_utn_edu_ar/EaGUdUH94blNvLICOrRZz7IBSxnhipSpM66EwcgbE1Sqjg?e=1xdqQH" target="_blank">
+              <img
+                src="img/portadas/padreRicoPadrePobre.jpg"
+                alt="Portada del Libro 8"
+              />
+              <h4>Padre Rico Padre Pobre</h4>
+            </a>
+            <div class="notaUsuario">
+              <textarea id="nota8" placeholder="Escribí tu nota..."></textarea>
+              <button id="salvarNota8">💾</button>
+              <button id="eliminarNota8">❌</button>
+            </div>
+          </li>
+
+          <li>
+            <div class="topBoton">
+              <button class="textoParaLeer" data-libro="libro9">🔊</button>
+              <button class="marcador" data-libro="libro9"></button>
+            </div>
+            <a
+              href="https://mdputneduar-my.sharepoint.com/:b:/g/personal/nkaminski_nodocente_mdp_utn_edu_ar/EemFKVpwjk5OuB_f3-yJHTgBqTeL0zWol9w2MA-bWpkXVw?e=vMrBE1" target="_blank">
+              <img
+                src="img/portadas/pienseYHagaseRico.jpg"
+                alt="Portada del Libro 9"
+              />
+              <h4>Piense y Hagase Rico</h4>
+            </a>
+            <div class="notaUsuario">
+              <textarea id="nota9" placeholder="Escribí tu nota..."></textarea>
+              <button id="salvarNota9">💾</button>
+              <button id="eliminarNota9">❌</button>
+            </div>
+          </li>
+
+          <li>
+            <div class="topBoton">
+              <button class="textoParaLeer" data-libro="libro10">🔊</button>
+              <button class="marcador" data-libro="libro10"></button>
+            </div>
+            <a
+              href="https://mdputneduar-my.sharepoint.com/:b:/g/personal/nkaminski_nodocente_mdp_utn_edu_ar/Ed7-sm2CfZhCneVyC8X00LABb5KorAUIoH8y4T8xTTJzzQ?e=Ei0rVa" target="_blank">
+              <img src="img/portadas/sapiens.jpg" alt="Portada del Libro 10" />
+              <h4>Sapiens</h4>
+            </a>
+            <div class="notaUsuario">
+              <textarea id="nota10" placeholder="Escribí tu nota..."></textarea>
+              <button id="salvarNota10">💾</button>
+              <button id="eliminarNota10">❌</button>
+            </div>
+          </li>
+
+          <li>
+            <div class="topBoton">
+              <button class="textoParaLeer" data-libro="libro11">🔊</button>
+              <button class="marcador" data-libro="libro11"></button>
+            </div>
+            <a
+              href="https://mdputneduar-my.sharepoint.com/:b:/g/personal/nkaminski_nodocente_mdp_utn_edu_ar/EVgmuzPlmJVDrXqWxY5Eoa8BkAxsdSdFpi7cUXR3YAJfSg?e=T99aJh" target="_blank">
+              <img
+                src="img/portadas/sutilArteDeQueTodoTeImportaUnCarajo.jpg"
+                alt="Portada del Libro 11"
+              />
+              <h4>El Sutil Arte de que Todo te Importa un Carajo</h4>
+            </a>
+            <div class="notaUsuario">
+              <textarea id="nota11" placeholder="Escribí tu nota..."></textarea>
+              <button id="salvarNota11">💾</button>
+              <button id="eliminarNota11">❌</button>
+            </div>
+          </li>
+
+          <li>
+            <div class="topBoton">
+              <button class="textoParaLeer" data-libro="libro12">🔊</button>
+              <button class="marcador" data-libro="libro12"></button>
+            </div>
+            <a
+              href="https://mdputneduar-my.sharepoint.com/:b:/g/personal/nkaminski_nodocente_mdp_utn_edu_ar/EXk7-t5nVTxBsLKEGf3lUqABZVX4yRFKM2Huo8uoydJIxw?e=z7JeFh" target="_blank">
+              <img
+                src="img/portadas/unPasoPorDelanteDeWallStreet.jpg"
+                alt="Portada del Libro 12"
+              />
+              <h4>Un Paso por Delante de Wall Street</h4>
+            </a>
+            <div class="notaUsuario">
+              <textarea id="nota12" placeholder="Escribí tu nota..."></textarea>
+              <button id="salvarNota12">💾</button>
+              <button id="eliminarNota12">❌</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="pie">
+        <img src="img/logoSFb.png" alt="Logo de DigiTeca" />
+        <div class="politicas">
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Política de Cookies</a>
+        </div>
+        <p>
+          Agradecemos tu visita a nuestra Biblioteca Virtual. ¡Disfruta de la
+          lectura!
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
